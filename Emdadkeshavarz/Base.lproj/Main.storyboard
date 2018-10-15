@@ -176,7 +176,7 @@
                                         <rect key="frame" x="22" y="84" width="196" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="نام">
+                                            <fragment content="کد فعالسازی">
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -199,6 +199,7 @@
                                             </attributedString>
                                         </state>
                                         <connections>
+                                            <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eun-mJ-6We"/>
                                             <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qj-Lg-hbU"/>
                                         </connections>
                                     </button>

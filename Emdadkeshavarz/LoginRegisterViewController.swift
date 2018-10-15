@@ -15,14 +15,17 @@ class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var ftMobile: UITextField!
     @IBOutlet weak var ftName: UITextField!
     @IBOutlet weak var ftFamily: UITextField!
-
+    @IBOutlet weak var LoginView: UIView!
     @IBAction func btnRegister(_ sender: Any) {
         RegView.isHidden = true
+        LoginView.isHidden = false
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        LoginView.isHidden = true
+        LoginView.layer.cornerRadius = 8.0
         RegView.layer.cornerRadius = 8.0
 
         

@@ -2,5 +2,6 @@ Pods/
 EmdadkeshavarzTests/
 EmdadkeshavarzUITests/
 Podfile.lock
-Emdadkeshavarz.xcworkspace
-Emdadkeshavarz.xcodeproj
+Emdadkeshavarz.xcodeproj/
+.DS_Store
+Emdadkeshavarz.xcworkspace/

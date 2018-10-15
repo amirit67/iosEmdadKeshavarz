@@ -16,18 +16,30 @@ class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var ftName: UITextField!
     @IBOutlet weak var ftFamily: UITextField!
     @IBOutlet weak var LoginView: UIView!
+    @IBOutlet weak var pvOstan: UIPickerView!
+
     @IBAction func btnRegister(_ sender: Any) {
         RegView.isHidden = true
         LoginView.isHidden = false
     }
     
+    @IBAction func btnLogin(_ sender: Any) {
+       LoginView.isHidden = true
+       RegView.isHidden = false
+    }
+    
+    let stateInfo:[(name: String, tax: Double)] = [("Alabama", 6.000), ("Illinois", 7.000), ("Oregon", 8.000), ("Wisconsin", 9.000)]
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        pvOstan.dataSource = self
+        pvOstan.delegate = self
         LoginView.isHidden = true
-        LoginView.layer.cornerRadius = 8.0
-        RegView.layer.cornerRadius = 8.0
-
+        LoginView.layer.cornerRadius = 10.0
+        RegView.layer.cornerRadius = 10.0
+      
+  
         
         
         Alamofire.request("https://httpbin.org/ip").responseJSON { (responseData) -> Void in
@@ -38,7 +50,23 @@ class LoginRegisterViewControler: UIViewController {
             }
         }
     }
+}
 
-
+extension LoginRegisterViewControler: UIPickerViewDelegate, UIPickerViewDataSource {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+         return 1
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+         return stateInfo.count
+    }
+    
+    func pickerView(pvOstan: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        ftName.text = "\( stateInfo[row].tax )"
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return stateInfo[row].name
+    }
 }
 

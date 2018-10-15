@@ -25,7 +25,7 @@ class LoginRegisterViewControler: UIViewController {
     
     @IBAction func btnLogin(_ sender: Any) {
        LoginView.isHidden = true
-       RegView.isHidden = false
+      
     }
     
     let stateInfo:[(name: String, tax: Double)] = [("Alabama", 6.000), ("Illinois", 7.000), ("Oregon", 8.000), ("Wisconsin", 9.000)]

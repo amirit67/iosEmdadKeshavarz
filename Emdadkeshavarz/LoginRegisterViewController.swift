@@ -24,7 +24,12 @@ class LoginRegisterViewControler: UIViewController {
         LoginView.isHidden = false
     }
     
-
+    @IBAction func btnGoRegister(_ sender: Any) {
+        LoginView.isHidden = true
+        RegView.isHidden = false
+        
+    }
+    
     @IBAction func btnRegister(_ sender: Any) {
         
         

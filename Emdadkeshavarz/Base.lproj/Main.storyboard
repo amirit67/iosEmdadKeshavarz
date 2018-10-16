@@ -29,15 +29,21 @@
                                 <attributedString key="attributedText">
                                     <fragment content="امداد کشاورز">
                                         <attributes>
-                                            <font key="NSFont" size="36" name="IRANSansWebFaNum"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-zx-YDy">
+                                <rect key="frame" x="103" y="526" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S59-WN-6Lx">
-                                <rect key="frame" x="76" y="78" width="240" height="320"/>
+                                <rect key="frame" x="67" y="91" width="240" height="371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOH-6s-eRh">
@@ -65,7 +71,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="شماره موبایل">
                                                 <attributes>
-                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -78,7 +84,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="نام">
                                                 <attributes>
-                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -91,7 +97,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="استان خود را انتخاب کنید">
                                                 <attributes>
-                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -109,7 +115,8 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="عضویت">
                                                     <attributes>
-                                                        <font key="NSFont" size="15" name="IRANSansWebFaNum"/>
+                                                        <font key="NSFont" size="15" name=".ArabicUIText-Regular"/>
+                                                        <font key="NSOriginalFont" metaFont="system" size="15"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -125,18 +132,32 @@
                                         <attributedString key="attributedText">
                                             <fragment content="نام خانوادگی">
                                                 <attributes>
-                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFe-7Y-6EH">
+                                        <rect key="frame" x="70" y="320" width="101" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="قبلا عضو نشده ايد؟">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name=".ArabicUIText-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-D1-SSp">
-                                <rect key="frame" x="67" y="227" width="240" height="212"/>
+                                <rect key="frame" x="67" y="209" width="240" height="248"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-JK-DZX">
@@ -158,7 +179,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="شماره موبایل">
                                                 <attributes>
-                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -171,7 +192,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="کد فعالسازی">
                                                 <attributes>
-                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -179,13 +200,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-J1-va1">
-                                        <rect key="frame" x="115" y="156" width="30" height="36"/>
+                                        <rect key="frame" x="102" y="155" width="30" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="ورود">
                                                     <attributes>
-                                                        <font key="NSFont" size="15" name="IRANSansWebFaNum"/>
+                                                        <font key="NSFont" size="12" name=".ArabicUIText-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -193,18 +214,28 @@
                                         </state>
                                         <connections>
                                             <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eun-mJ-6We"/>
-                                            <action selector="btnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qj-Lg-hbU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-nx-KPi">
+                                        <rect key="frame" x="88" y="204" width="44" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="عضويت">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name=".ArabicUIText-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnGoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQz-jz-6jU"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-zx-YDy">
-                                <rect key="frame" x="103" y="526" width="169" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -233,6 +264,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="309" height="515.25"/>
+        <image name="bg" width="206" height="343"/>
     </resources>
 </document>

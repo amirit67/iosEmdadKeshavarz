@@ -8,7 +8,8 @@ target 'Emdadkeshavarz' do
   # Pods for Emdadkeshavarz
       pod 'Alamofire', '~> 4.7'
       pod 'SwiftyJSON', '~> 4.0'
-      pod 'Toast-Swift', '~> 4.0'
+      #pod 'Toast-Swift', '~> 4.0'
+      pod 'Toast', '~> 4.0.0'
  
   target 'EmdadkeshavarzTests' do
     inherit! :search_paths

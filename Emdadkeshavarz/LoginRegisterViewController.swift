@@ -19,12 +19,12 @@ class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var LoginView: UIView!
     @IBOutlet weak var pvOstan: UIPickerView!
 
-   
     @IBAction func btnGoLogin(_ sender: Any) {
         RegView.isHidden = true
         LoginView.isHidden = false
-
     }
+    
+
     @IBAction func btnRegister(_ sender: Any) {
         
         
@@ -70,9 +70,6 @@ class LoginRegisterViewControler: UIViewController {
         LoginView.layer.cornerRadius = 10.0
         RegView.layer.cornerRadius = 10.0
       
-  
-        
-        
         Alamofire.request("https://httpbin.org/ip").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
@@ -81,6 +78,7 @@ class LoginRegisterViewControler: UIViewController {
             }
         }
     }
+    
 }
 
 extension LoginRegisterViewControler: UIPickerViewDelegate, UIPickerViewDataSource {

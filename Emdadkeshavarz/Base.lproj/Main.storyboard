@@ -29,7 +29,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="امداد کشاورز">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <font key="NSFont" size="36" name="IRANSansWebFaNum"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -71,7 +71,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="شماره موبایل">
                                                 <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -84,7 +84,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="نام">
                                                 <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -115,7 +115,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="عضویت">
                                                     <attributes>
-                                                        <font key="NSFont" size="15" name=".ArabicUIText-Regular"/>
+                                                        <font key="NSFont" size="15" name="IRANSansWebFaNum"/>
                                                         <font key="NSOriginalFont" metaFont="system" size="15"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
@@ -146,12 +146,15 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="قبلا عضو نشده ايد؟">
                                                     <attributes>
-                                                        <font key="NSFont" size="12" name=".ArabicUIText-Regular"/>
+                                                        <font key="NSFont" size="12" name="IRANSansWebFaNum"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="btnGoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhH-vy-u9L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,7 +182,8 @@
                                         <attributedString key="attributedText">
                                             <fragment content="شماره موبایل">
                                                 <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -192,7 +196,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="کد فعالسازی">
                                                 <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -206,7 +210,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="ورود">
                                                     <attributes>
-                                                        <font key="NSFont" size="12" name=".ArabicUIText-Regular"/>
+                                                        <font key="NSFont" size="12" name="IRANSansWebFaNum"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -223,7 +227,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="عضويت">
                                                     <attributes>
-                                                        <font key="NSFont" size="12" name=".ArabicUIText-Regular"/>
+                                                        <font key="NSFont" size="12" name="IRANSansWebFaNum"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -264,6 +268,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="206" height="343"/>
+        <image name="bg" width="309" height="515.25"/>
     </resources>
 </document>

@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Toast
 
 class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var IPlbl: UILabel!
@@ -18,9 +19,39 @@ class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var LoginView: UIView!
     @IBOutlet weak var pvOstan: UIPickerView!
 
-    @IBAction func btnRegister(_ sender: Any) {
+   
+    @IBAction func btnGoLogin(_ sender: Any) {
         RegView.isHidden = true
         LoginView.isHidden = false
+
+    }
+    @IBAction func btnRegister(_ sender: Any) {
+        
+        
+        let name : String = ftName.text!
+        let fname : String = ftFamily.text!
+        let mobile : String = ftMobile.text!
+        let province : String = "100"
+        
+        Alamofire.request("http://emdadkeshavarz.com/api/emdadapplicantregister", method: .post, parameters: ["Name": name, "FamilyName": fname, "Province": province, "Mobile": mobile, "Type" : "Register", "Token" : "asert"])
+            .validate()
+            .responseString { response in
+                switch response.result {
+                case .success:
+                    //print("Validation Successful")
+                    self.RegView.isHidden = false
+                case .failure(let error):
+                    let Code = response.response?.statusCode
+                    print(error)
+                    if Code == 403{
+                        self.view.makeToast("شما قبلا عضو شده ايد",duration : 0.5,position:"bottom")}
+                    else if Code == 500{
+                        self.view.makeToast("خطا در برقراري ارتباط با سرور",duration : 0.5,position:"bottom")}
+                    else {
+                        self.view.makeToast("خطا در برقراري ارتباط با سرور",duration : 0.5,position:"bottom") }
+                    
+                }
+        }
     }
     
     @IBAction func btnLogin(_ sender: Any) {

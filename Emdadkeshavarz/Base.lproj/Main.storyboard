@@ -47,6 +47,116 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-D1-SSp">
+                                <rect key="frame" x="67" y="209" width="240" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-JK-DZX">
+                                        <rect key="frame" x="19" y="46" width="196" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ftMobile"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-J1-va1">
+                                        <rect key="frame" x="102" y="155" width="30" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="ورود">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="cellTitle"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eun-mJ-6We"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-nx-KPi">
+                                        <rect key="frame" x="98" y="199" width="44" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="عضويت">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="IRANSansWebFaNum"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnGoRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z92-GH-IrE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db8-lS-Yvr">
+                                        <rect key="frame" x="19" y="17" width="196" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="شماره موبایل">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jg-7U-9uG">
+                                        <rect key="frame" x="0.0" y="84" width="240" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV8-Ft-AbY">
+                                                <rect key="frame" x="22" y="8" width="196" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="کد">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="فعالسازی">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HAB-uB-Sc4">
+                                                <rect key="frame" x="22" y="37" width="196" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsZ-UV-kWC">
+                                                <rect key="frame" x="105" y="80" width="30" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="IRANSansWebFaNum" family="IRANSansWeb(FaNum)" pointSize="13"/>
+                                                <state key="normal" title="تاييد"/>
+                                                <connections>
+                                                    <action selector="btnSubmitCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9J-Fk-Jbb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S59-WN-6Lx">
                                 <rect key="frame" x="67" y="91" width="240" height="371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -161,116 +271,6 @@
                                             <action selector="btnGoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhH-vy-u9L"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-D1-SSp">
-                                        <rect key="frame" x="0.0" y="127" width="240" height="248"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-JK-DZX">
-                                                <rect key="frame" x="19" y="46" width="196" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="ftMobile"/>
-                                                <attributedString key="attributedText"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-J1-va1">
-                                                <rect key="frame" x="102" y="155" width="30" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="ورود">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="cellTitle"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eun-mJ-6We"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-nx-KPi">
-                                                <rect key="frame" x="98" y="199" width="44" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="عضويت">
-                                                            <attributes>
-                                                                <font key="NSFont" size="12" name="IRANSansWebFaNum"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnGoRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z92-GH-IrE"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db8-lS-Yvr">
-                                                <rect key="frame" x="19" y="17" width="196" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="شماره موبایل">
-                                                        <attributes>
-                                                            <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jg-7U-9uG">
-                                                <rect key="frame" x="0.0" y="84" width="240" height="114"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aV8-Ft-AbY">
-                                                        <rect key="frame" x="22" y="8" width="196" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="کد">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
-                                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content=" ">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="فعالسازی">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="14" name="IRANSansWebFaNum"/>
-                                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HAB-uB-Sc4">
-                                                        <rect key="frame" x="22" y="37" width="196" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <attributedString key="attributedText"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsZ-UV-kWC">
-                                                        <rect key="frame" x="105" y="80" width="30" height="33"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="IRANSansWebFaNum" family="IRANSansWeb(FaNum)" pointSize="13"/>
-                                                        <state key="normal" title="تاييد"/>
-                                                        <connections>
-                                                            <action selector="btnSubmitCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9J-Fk-Jbb"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>

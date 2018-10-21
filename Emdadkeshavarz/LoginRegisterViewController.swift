@@ -98,6 +98,7 @@ class LoginRegisterViewControler: UIViewController {
                 switch response.result {
                 case .success:
                     //print("Validation Successful")
+                     self.view.makeToast("با موفقيت وارد شديد",duration : 0.5,position:"bottom")
                     self.RegCodeLogin.isHidden = true
                 case .failure(let error):
                     let Code = response.response?.statusCode

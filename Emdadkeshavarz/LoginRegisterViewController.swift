@@ -18,8 +18,8 @@ class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var ftFamily: UITextField!
     @IBOutlet weak var LoginView: UIView!
     @IBOutlet weak var pvOstan: UIPickerView!
-    
-    
+      let provinceDic:[(name: String, code: Int)] = [("Oregon", 8), ("Wisconsin", 9)]
+    var province : String = "100"
     @IBOutlet weak var RegCodeLogin: UIView!
     @IBOutlet weak var tfMobileLogin: UITextField!
     @IBOutlet weak var tfCodeLogin: UITextField!
@@ -38,11 +38,11 @@ class LoginRegisterViewControler: UIViewController {
     
     @IBAction func btnRegister(_ sender: Any) {
         
-        
+      
         let name : String = ftName.text!
         let fname : String = ftFamily.text!
         let mobile : String = ftMobile.text!
-        let province : String = "100"
+      
         
         Alamofire.request("http://emdadkeshavarz.com/api/emdadapplicantregister", method: .post, parameters: ["Name": name, "FamilyName": fname, "Province": province, "Mobile": mobile, "Type" : "Register", "Token" : "asert"])
             .validate()
@@ -137,21 +137,23 @@ class LoginRegisterViewControler: UIViewController {
     
 }
 
-extension LoginRegisterViewControler: UIPickerViewDelegate, UIPickerViewDataSource {
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-         return 1
-    }
-    
+
+
+extension LoginRegisterViewControler :   UIPickerViewDelegate,UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-         return stateInfo.count
+        return 1
     }
     
-    func pickerView(pvOstan: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        ftName.text = "\( stateInfo[row].tax )"
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.provinceDic.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return stateInfo[row].name
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+       self.province = "\(self.provinceDic[row].code)"
     }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.provinceDic[row].name
+    }
+    
 }
 

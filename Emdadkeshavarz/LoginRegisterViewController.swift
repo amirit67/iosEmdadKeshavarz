@@ -18,7 +18,13 @@ class LoginRegisterViewControler: UIViewController {
     @IBOutlet weak var ftFamily: UITextField!
     @IBOutlet weak var LoginView: UIView!
     @IBOutlet weak var pvOstan: UIPickerView!
-
+    
+    
+    @IBOutlet weak var RegCodeLogin: UIView!
+    @IBOutlet weak var tfMobileLogin: UITextField!
+    @IBOutlet weak var tfCodeLogin: UITextField!
+    
+    
     @IBAction func btnGoLogin(_ sender: Any) {
         RegView.isHidden = true
         LoginView.isHidden = false
@@ -60,8 +66,52 @@ class LoginRegisterViewControler: UIViewController {
     }
     
     @IBAction func btnLogin(_ sender: Any) {
-       LoginView.isHidden = true
+        let mobile : String = tfMobileLogin.text!
+        Alamofire.request("http://emdadkeshavarz.com/api/emdadapplicantregister", method: .post, parameters: ["Mobile": mobile, "Type" : "Login", "Token" : "asert"])
+            .validate()
+            .responseString { response in
+                switch response.result {
+                case .success:
+                    //print("Validation Successful")
+                    self.RegCodeLogin.isHidden = true
+                case .failure(let error):
+                    let Code = response.response?.statusCode
+                    print(error)
+                    if Code == 403{
+                        self.view.makeToast("شما قبلا عضو شده ايد",duration : 0.5,position:"bottom")}
+                    else if Code == 500{
+                        self.view.makeToast("خطا در برقراري ارتباط با سرور",duration : 0.5,position:"bottom")}
+                    else {
+                        self.view.makeToast("خطا در برقراري ارتباط با سرور",duration : 0.5,position:"bottom") }
+                    
+                }
+        }
       
+    }
+    
+    @IBAction func btnSubmitCode(_ sender: Any) {
+        let mobile : String = tfMobileLogin.text!
+        let Code : String = tfCodeLogin.text!
+        Alamofire.request("http://emdadkeshavarz.com/api/emdadapplicationverification", method: .post, parameters: ["Mobile": mobile, "SmsCode" : Code])
+            .validate()
+            .responseString { response in
+                switch response.result {
+                case .success:
+                    //print("Validation Successful")
+                     self.view.makeToast("با موفقيت وارد شديد",duration : 0.5,position:"bottom")
+                    self.RegCodeLogin.isHidden = true
+                case .failure(let error):
+                    let Code = response.response?.statusCode
+                    print(error)
+                    if Code == 403{
+                        self.view.makeToast("شما قبلا عضو شده ايد",duration : 0.5,position:"bottom")}
+                    else if Code == 500{
+                        self.view.makeToast("خطا در برقراري ارتباط با سرور",duration : 0.5,position:"bottom")}
+                    else {
+                        self.view.makeToast("خطا در برقراري ارتباط با سرور",duration : 0.5,position:"bottom") }
+                    
+                }
+        }
     }
     
     let stateInfo:[(name: String, tax: Double)] = [("Alabama", 6.000), ("Illinois", 7.000), ("Oregon", 8.000), ("Wisconsin", 9.000)]
@@ -74,6 +124,7 @@ class LoginRegisterViewControler: UIViewController {
         LoginView.isHidden = true
         LoginView.layer.cornerRadius = 10.0
         RegView.layer.cornerRadius = 10.0
+        RegCodeLogin.isHidden = false
       
         Alamofire.request("https://httpbin.org/ip").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
